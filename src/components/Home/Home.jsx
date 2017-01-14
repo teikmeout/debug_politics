@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import styles from './Home.css';
 
 class Home extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -31,7 +32,6 @@ class Home extends Component {
     });
   }
 
-
   render() {
     return (
       <div className={styles['']}>
@@ -44,8 +44,6 @@ class Home extends Component {
           />
 
         </div>
-
-
       </div>
     )
   }
