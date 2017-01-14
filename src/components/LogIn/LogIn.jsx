@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import styles from './Home.css';
+import styles from './LogIn.css';
 
 class LogIn extends Component {
   constructor(props) {
@@ -45,8 +45,18 @@ class LogIn extends Component {
             value={this.state.username}
             onChange={this.trackLoginInput.bind(this)}
           />
+          <input
+            type="text"
+            placeholder="password"
+            value={this.state.password}
+            onChange={this.trackLoginInput.bind(this)}
+          />
         </div>
+      <button><Link className="signup-button" to="/create"> Sign Up </Link></button>
+      <button><Link className="login-button" to="/home"> Log In </Link></button>
       </div>
-    )
+    );
   }
 }
+
+export default LogIn;
