@@ -5,33 +5,32 @@ import styles from './LogIn.css';
 class LogIn extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      username: '',
-      password: '',
-    }
   }
 
   postLogin(e) {
-    return fetch('localhost:3000/user/login', {
+    console.log('logging in')
+    return fetch('/user/login', {
       method: 'POST',
       headers: {
         'content-type': 'application/JSON'
       },
       body: JSON.stringify({
-        loginUsername: this.state.username,
+        loginUsername: this.state.loginUsername,
         loginPassword: this.state.loginPassword
       })
     })
+    .then(result => result.json())
     .then( (data) => {
+      console.log(data)
       localStorage.setItem('token', data)
     })
   }
 
   trackLoginInput(e) {
-    console.log(e)
+    let inputArray = e.target.parentElement.childNodes
     this.setState({
-      username: e.target.value,
-      password: e.target.value,
+      loginUsername: inputArray[0].value,
+      loginPassword: inputArray[1].value,
     });
   }
 
@@ -42,18 +41,16 @@ class LogIn extends Component {
           <input
             type="text"
             placeholder="username"
-            value={this.state.username}
             onChange={this.trackLoginInput.bind(this)}
           />
           <input
-            type="text"
+            type="password"
             placeholder="password"
-            value={this.state.password}
             onChange={this.trackLoginInput.bind(this)}
           />
         </div>
       <button><Link className="signup-button" to="/create"> Sign Up </Link></button>
-      <button><Link className="login-button" to="/home"> Log In </Link></button>
+      <button onClick={this.postLogin.bind(this)}><Link className="login-button" to="/home"> Log In </Link></button>
       </div>
     );
   }
