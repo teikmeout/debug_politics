@@ -7981,9 +7981,9 @@
 
 /***/ },
 /* 205 */
-/*!*******************************************!*\
-  !*** ./~/history/~/query-string/index.js ***!
-  \*******************************************/
+/*!*********************************!*\
+  !*** ./~/query-string/index.js ***!
+  \*********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';var strictUriEncode=__webpack_require__(/*! strict-uri-encode */ 206);exports.extract=function(str){return str.split('?')[1]||'';};exports.parse=function(str){if(typeof str!=='string'){return{};}str=str.trim().replace(/^(\?|#|&)/,'');if(!str){return{};}return str.split('&').reduce(function(ret,param){var parts=param.replace(/\+/g,' ').split('=');// Firefox (pre 40) decodes `%3D` to `=`
@@ -8620,7 +8620,11 @@
   \********************************/
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _Home=__webpack_require__(/*! ./Home/Home.jsx */ 243);var _Home2=_interopRequireDefault(_Home);var _App=__webpack_require__(/*! ./App.css */ 245);var _App2=_interopRequireDefault(_App);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var App=function(_Component){_inherits(App,_Component);function App(){_classCallCheck(this,App);return _possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).apply(this,arguments));}_createClass(App,[{key:'render',value:function render(){return _react2.default.createElement('div',null,this.props.children&&_react2.default.cloneElement(this.props.children,{}));}}]);return App;}(_react.Component);exports.default=App;
+=======
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _Home=__webpack_require__(/*! ./Home/Home.jsx */ 243);var _Home2=_interopRequireDefault(_Home);var _App=__webpack_require__(/*! ./App.css */ 245);var _App2=_interopRequireDefault(_App);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var App=function(_Component){_inherits(App,_Component);function App(){_classCallCheck(this,App);var _this=_possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).call(this));_this.state={yes:'yes'};return _this;}_createClass(App,[{key:'render',value:function render(){return _react2.default.createElement('div',null,this.props.children&&_react2.default.cloneElement(this.props.children,{}));}}]);return App;}(_react.Component);exports.default=App;
+>>>>>>> master
 
 /***/ },
 /* 243 */
@@ -8629,13 +8633,18 @@
   \**************************************/
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	'use strict';var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _Home=__webpack_require__(/*! ./Home.css */ 244);var _Home2=_interopRequireDefault(_Home);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Home=function(_Component){_inherits(Home,_Component);function Home(props){_classCallCheck(this,Home);var _this=_possibleConstructorReturn(this,(Home.__proto__||Object.getPrototypeOf(Home)).call(this,props));_this.state={username:'',password:''};return _this;}_createClass(Home,[{key:'doLogin',value:function doLogin(e){e.preventDefault();var bodyObj={email:this.state.email,password:this.state.password};}},{key:'updateEmailForm',value:function updateEmailForm(e){this.setState({email:e.target.value});}},{key:'updatePasswordForm',value:function updatePasswordForm(e){this.setState({password:e.target.value});}},{key:'render',value:function render(){return _react2.default.createElement('div',{className:_Home2.default['']},_react2.default.createElement('div',{className:'log-in'},_react2.default.createElement('input',{type:'text',placeholder:'Email',value:this.state.email,onChange:this.updateEmailForm.bind(this)})));}}]);return Home;}(_react.Component);
+=======
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _Home=__webpack_require__(/*! ./Home.css */ 244);var _Home2=_interopRequireDefault(_Home);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Home=function(_Component){_inherits(Home,_Component);function Home(props){_classCallCheck(this,Home);var _this=_possibleConstructorReturn(this,(Home.__proto__||Object.getPrototypeOf(Home)).call(this,props));_this.state={username:'',password:''};return _this;}_createClass(Home,[{key:'doLogin',value:function doLogin(e){e.preventDefault();var bodyObj={email:this.state.email,password:this.state.password};}},{key:'updateEmailForm',value:function updateEmailForm(e){this.setState({email:e.target.value});}},{key:'updatePasswordForm',value:function updatePasswordForm(e){this.setState({password:e.target.value});}},{key:'render',value:function render(){return _react2.default.createElement('div',{className:_Home2.default['']},_react2.default.createElement('div',{className:'log-in'},_react2.default.createElement('input',{type:'text',placeholder:'Email',value:this.state.email,onChange:this.updateEmailForm.bind(this)})));}}]);return Home;}(_react.Component);exports.default=Home;
+>>>>>>> master
 
 /***/ },
 /* 244 */
 /*!**************************************!*\
   !*** ./src/components/Home/Home.css ***!
   \**************************************/
+<<<<<<< HEAD
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
@@ -8645,11 +8654,14 @@
 /*!********************************!*\
   !*** ./src/components/App.css ***!
   \********************************/
+=======
+>>>>>>> master
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
+<<<<<<< HEAD
 /* 246 */
 /*!****************************************!*\
   !*** ./src/components/LogIn/LogIn.jsx ***!
@@ -8690,6 +8702,12 @@
 /*!****************************************!*\
   !*** ./src/components/LogIn/LogIn.css ***!
   \****************************************/
+=======
+/* 245 */
+/*!********************************!*\
+  !*** ./src/components/App.css ***!
+  \********************************/
+>>>>>>> master
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
