@@ -80,7 +80,7 @@ class CreateUser extends Component {
             value={this.state.address}
             onChange={this.updateInputFields.bind(this)} />
         </div>
-      <Link className='create' to="/create"><button> Submit </button></Link>
+      <Link className='create' to="/home"><button> Submit </button></Link>
       </div>
     );
   }
