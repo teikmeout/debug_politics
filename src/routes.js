@@ -14,6 +14,7 @@ module.exports = (
     <Route path='/create' component={CreateUser} />
     <Route path='/home' component={Home} />
     <Route path='/main' component={Main} />
+    <Route path='/results' component={Results} />
 
   </Route>
 );
