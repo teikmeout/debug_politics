@@ -22,4 +22,9 @@ app.use(expressJWT({secret: process.env.secret}).unless(
 const userRouter = require('./routes/user.js');
 app.use('/user', userRouter);
 
+// default user route for react router
+app.get('*', function (request, response){
+  response.sendFile(path.resolve(__dirname, 'dist', 'index.html'))
+})
+
 app.listen(PORT, () => console.log('Heyo!', PORT));
