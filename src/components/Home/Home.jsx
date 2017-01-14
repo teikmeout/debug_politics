@@ -6,18 +6,18 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: '',
+      username: '',
       password: '',
     }
   }
 
   doLogin(e) {
-    console.log('here')
     e.preventDefault();
     const bodyObj = {
       email: this.state.email,
       password: this.state.password,
     };
+  }
 
   updateEmailForm(e) {
     this.setState({
@@ -50,4 +50,3 @@ class Home extends Component {
     )
   }
 }
-
