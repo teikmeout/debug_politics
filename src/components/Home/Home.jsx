@@ -4,6 +4,34 @@ import styles from './Home.css';
 
 class Home extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: '',
+      password: '',
+    }
+  }
+
+  doLogin(e) {
+    e.preventDefault();
+    const bodyObj = {
+      email: this.state.email,
+      password: this.state.password,
+    };
+  }
+
+  updateEmailForm(e) {
+    this.setState({
+      email: e.target.value,
+    });
+  }
+
+  updatePasswordForm(e) {
+    this.setState({
+      password: e.target.value,
+    });
+  }
+
   render() {
     return (
       <div className={styles['']}>
@@ -20,4 +48,3 @@ class Home extends Component {
     )
   }
 }
-

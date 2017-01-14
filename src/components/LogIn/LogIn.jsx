@@ -6,31 +6,34 @@ class LogIn extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: '',
+      username: '',
       password: '',
     }
   }
 
-  doLogin(e) {
-    console.log('here')
-    e.preventDefault();
-    const bodyObj = {
-      email: this.state.email,
-      password: this.state.password,
-    };
-
-  updateEmailForm(e) {
-    this.setState({
-      email: e.target.value,
-    });
+  postLogin(e) {
+    return fetch('localhost:3000/user/login', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/JSON'
+      },
+      body: JSON.stringify({
+        loginUsername: this.state.username,
+        loginPassword: this.state.loginPassword
+      })
+    })
+    .then( (data) => {
+      localStorage.setItem('token', data)
+    })
   }
 
-  updatePasswordForm(e) {
+  trackLoginInput(e) {
+    console.log(e)
     this.setState({
+      username: e.target.value,
       password: e.target.value,
     });
   }
-
 
   render() {
     return (
@@ -38,15 +41,12 @@ class LogIn extends Component {
         <div className="log-in">
           <input
             type="text"
-            placeholder="Email"
-            value={this.state.email}
-            onChange={this.updateEmailForm.bind(this)}
+            placeholder="username"
+            value={this.state.username}
+            onChange={this.trackLoginInput.bind(this)}
           />
-
         </div>
-
       </div>
     )
   }
 }
-
