@@ -6,11 +6,13 @@ class Main extends Component {
 
   render() {
     return (
-      <div className='reps-cont'>
-        <h1>
-          it's working
-        </h1>
-      </div>
+      <section className='main-container'>
+        <div className='reps-cont'>
+          <h1>
+            it's working
+          </h1>
+        </div>
+      </section>
     )
   }
 }

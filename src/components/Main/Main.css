@@ -1,6 +1,11 @@
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+}
+
 .reps-cont {
   border: 2px solid red;
-  height: 80%;
-  width: 80%;
-  background-color: red;
+  height: 80vh;
+  width: 40%;
 }
