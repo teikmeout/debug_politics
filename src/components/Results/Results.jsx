@@ -4,7 +4,12 @@ import styles from './Results.css';
 
 class Results extends Component {
 
-   render() {
-   return (
+  render() {
+    return (
+      <h1>yes</h1>
+    )
+  }
 
 }
+
+export default Results;
