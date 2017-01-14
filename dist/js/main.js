@@ -8611,18 +8611,10 @@
   \***********************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _App=__webpack_require__(/*! ./components/App.jsx */ 242);var _App2=_interopRequireDefault(_App);var _Home=__webpack_require__(/*! ./components/Home/Home.jsx */ 243);var _Home2=_interopRequireDefault(_Home);var _LogIn=__webpack_require__(/*! ./components/LogIn/LogIn.jsx */ 246);var _LogIn2=_interopRequireDefault(_LogIn);var _CreateUser=__webpack_require__(/*! ./components/CreateUser/CreateUser.jsx */ 248);var _CreateUser2=_interopRequireDefault(_CreateUser);var _Results=__webpack_require__(/*! ./components/Results/Results.jsx */ 250);var _Results2=_interopRequireDefault(_Results);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}module.exports=_react2.default.createElement(_reactRouter.Route,{path:'/',component:_App2.default},_react2.default.createElement(_reactRouter.IndexRoute,{component:_LogIn2.default}),_react2.default.createElement(_reactRouter.Route,{path:'/create',component:_CreateUser2.default}),_react2.default.createElement(_reactRouter.Route,{path:'/home',component:_Home2.default}));
+	'use strict';var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _App=__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/App.jsx\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));var _App2=_interopRequireDefault(_App);var _Home=__webpack_require__(/*! ./components/Home/Home.jsx */ 243);var _Home2=_interopRequireDefault(_Home);var _LogIn=__webpack_require__(/*! ./components/LogIn/LogIn.jsx */ 246);var _LogIn2=_interopRequireDefault(_LogIn);var _CreateUser=__webpack_require__(/*! ./components/CreateUser/CreateUser.jsx */ 248);var _CreateUser2=_interopRequireDefault(_CreateUser);var _Results=__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/Results/Results.jsx\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));var _Results2=_interopRequireDefault(_Results);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}module.exports=_react2.default.createElement(_reactRouter.Route,{path:'/',component:_App2.default},_react2.default.createElement(_reactRouter.IndexRoute,{component:_LogIn2.default}),_react2.default.createElement(_reactRouter.Route,{path:'/create',component:_CreateUser2.default}),_react2.default.createElement(_reactRouter.Route,{path:'/home',component:_Home2.default}));
 
 /***/ },
-/* 242 */
-/*!********************************!*\
-  !*** ./src/components/App.jsx ***!
-  \********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 1);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 178);var _Home=__webpack_require__(/*! ./Home/Home.jsx */ 243);var _Home2=_interopRequireDefault(_Home);var _App=__webpack_require__(/*! ./App.css */ 245);var _App2=_interopRequireDefault(_App);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var App=function(_Component){_inherits(App,_Component);function App(){_classCallCheck(this,App);var _this=_possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).call(this));_this.state={yes:'yes'};return _this;}_createClass(App,[{key:'render',value:function render(){return _react2.default.createElement('div',null,this.props.children&&_react2.default.cloneElement(this.props.children,{}));}}]);return App;}(_react.Component);exports.default=App;
-
-/***/ },
+/* 242 */,
 /* 243 */
 /*!**************************************!*\
   !*** ./src/components/Home/Home.jsx ***!
@@ -8641,15 +8633,7 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 245 */
-/*!********************************!*\
-  !*** ./src/components/App.css ***!
-  \********************************/
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
+/* 245 */,
 /* 246 */
 /*!****************************************!*\
   !*** ./src/components/LogIn/LogIn.jsx ***!
@@ -8684,15 +8668,6 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 250 */
-/*!********************************************!*\
-  !*** ./src/components/Results/Results.jsx ***!
-  \********************************************/
-/***/ function(module, exports) {
-
-	"use strict";
 
 /***/ }
 /******/ ]);
