@@ -7981,9 +7981,9 @@
 
 /***/ },
 /* 205 */
-/*!*********************************!*\
-  !*** ./~/query-string/index.js ***!
-  \*********************************/
+/*!*******************************************!*\
+  !*** ./~/history/~/query-string/index.js ***!
+  \*******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';var strictUriEncode=__webpack_require__(/*! strict-uri-encode */ 206);exports.extract=function(str){return str.split('?')[1]||'';};exports.parse=function(str){if(typeof str!=='string'){return{};}str=str.trim().replace(/^(\?|#|&)/,'');if(!str){return{};}return str.split('&').reduce(function(ret,param){var parts=param.replace(/\+/g,' ').split('=');// Firefox (pre 40) decodes `%3D` to `=`
