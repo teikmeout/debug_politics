@@ -12,6 +12,7 @@ module.exports = (
     <IndexRoute component={LogIn} />
     <Route path='/create' component={CreateUser} />
     <Route path='/home' component={Home} />
+    <Route path='/results' component={Results} />
 
   </Route>
 );

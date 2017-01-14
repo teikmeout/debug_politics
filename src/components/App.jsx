@@ -9,28 +9,30 @@ class App extends Component {
     this.state = {
       yes: 'yes',
       officials: [],
+      activeOfficial: {},
     }
   }
 
-  officialsList() {
-    return this.state.officials.map((official, i) => {
-     <Home
-       official.name
-       official.party
-       official.phones[0]
-       official.urls[0]
-     </RepContainer>
-     // <img src="official.photoUrl" alt="official.name"/>
-     // <a href="www.facebook.com/{}"></a>
-
+  componentDidMount() {
+    // this.officialsList();
   }
-     })
+
+// function to change the state of official in results page when a representative is clicked.
+  changeOfficial(official) {
+    console.log(official)
+    this.setState({
+      activeOfficial: official,
+    });
+    browserHistory.push('/results')
+  }
 
   render() {
     return (
       <div>
         {this.props.children && React.cloneElement(this.props.children, {
-
+          officials: this.state.officials,
+          // officialsList: this.officialsList.bind(this),
+          activeOfficial: this.state.activeOfficial,
         })}
       </div>
     );

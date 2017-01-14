@@ -4,7 +4,16 @@ import styles from './Results.css';
 
 class Results extends Component {
 
-   render() {
-   return (
+  render() {
+    return (
+      <div className="official-page" onClick={() => props.clickMethod(props.official)}>
+        <div className="official-details">
 
+        </div>
+      </div>
+    );
+  }
 }
+
+export default Results;
+
