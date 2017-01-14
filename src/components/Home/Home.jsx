@@ -3,21 +3,22 @@ import { Link } from 'react-router';
 import styles from './Home.css';
 
 class Home extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
-      email: '',
+      username: '',
       password: '',
     }
   }
 
   doLogin(e) {
-    console.log('here')
     e.preventDefault();
     const bodyObj = {
       email: this.state.email,
       password: this.state.password,
     };
+  }
 
   updateEmailForm(e) {
     this.setState({
@@ -31,7 +32,6 @@ class Home extends Component {
     });
   }
 
-
   render() {
     return (
       <div className={styles['']}>
@@ -44,10 +44,7 @@ class Home extends Component {
           />
 
         </div>
-
-
       </div>
     )
   }
 }
-
