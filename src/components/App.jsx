@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { browserHistory, Router, Route, Link } from 'react-router';
+import Home from './Home/Home.jsx';
 import styles from './App.css';
 
 class App extends Component {
 
   render() {
     return (
+      <div>
+        {this.props.children && React.cloneElement(this.props.children, {
 
-        <h1>Heyo!!!</h1>
-
-       );
+        })
       }
-    }
+      </div>
+    );
+  }
+}
 
 export default App;
