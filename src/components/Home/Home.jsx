@@ -18,6 +18,7 @@ class Home extends Component {
       email: this.state.email,
       password: this.state.password,
     };
+  }
 
   updateEmailForm(e) {
     this.setState({
