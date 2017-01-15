@@ -27,7 +27,10 @@ module.exports = {
       xhtml: true,
       inject: false,
       template: require('html-webpack-template'),
-      appMountId: 'root-container'
+      appMountId: 'root-container',
+      scripts: [
+        "https://fonts.googleapis.com/css?family=Alegreya+Sans:700"
+      ]
     }),
     new ExtractTextPlugin('/css/[name].css', {
       allChunks: true
