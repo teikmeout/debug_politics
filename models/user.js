@@ -27,8 +27,12 @@ function authenticate(req, res, next) {
     .then((data) => {
       const match = bcrypt.compareSync(req.body.loginPassword, data.password);
       if (match) {
+        console.log('data inside model', data)
         const token = jwt.sign({ username: req.body.username}, process.env.secret);
-        res.token = token
+        res.match = {
+          token: token,
+          address: data.address
+        }
         next();
       } else {
         res.token = {failed: 'failed'};

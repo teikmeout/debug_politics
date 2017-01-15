@@ -14,8 +14,7 @@ class CreateUser extends Component {
     }
   }
 
-  createUser(e) {
-    console.log('hi!')
+  createUser() {
     fetch('/user/signup', {
       method: 'POST',
       headers: {

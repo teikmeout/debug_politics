@@ -8,6 +8,10 @@ class Home extends Component {
     super(props);
   }
 
+  componentDidMount() {
+    this.props.getOfficialsByAddress()
+  }
+
   officialsList() {
     return this.props.officials.map((official, i) => {
       <Home

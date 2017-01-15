@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use(bodyParser.json());
 app.use(expressJWT({secret: process.env.secret}).unless(
-  {path: ['/favicon.ico', '/user/signup', '/user/login', '/official/:address', '/main', '/results', 'news/search', '/update']}
+  {path: [/\/official\//i, '/favicon.ico', '/user/signup', '/user/login', '/main', '/results', 'news/search', '/update']}
 ));
 
 const userRouter = require('./routes/user.js');
