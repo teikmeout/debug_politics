@@ -6,7 +6,7 @@ import LogIn from './components/LogIn/LogIn.jsx';
 import CreateUser from './components/CreateUser/CreateUser.jsx';
 import Results from './components/Results/Results.jsx';
 import Main from './components/Main/Main.jsx';
-
+import TryAgain from './components/TryAgain.jsx'
 
 module.exports = (
   <Route path='/' component={App}>
@@ -15,5 +15,6 @@ module.exports = (
     <Route path='/home' component={Home} />
     <Route path='/main' component={Main} />
     <Route path='/results' component={Results} />
+    <Route path='/tryagain' component={TryAgain}/>
   </Route>
 );

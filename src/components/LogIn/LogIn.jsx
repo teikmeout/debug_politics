@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link, browserHistory } from 'react-router';
 import styles from './LogIn.css';
 
 class LogIn extends Component {
@@ -21,8 +21,13 @@ class LogIn extends Component {
     })
     .then(result => result.json())
     .then( (data) => {
+      if (!data.failed) {
+        browserHistory.push('/home')
+        localStorage.setItem('token', data)
+      } else {
+        console.log('nope')
+      }
       console.log(data)
-      localStorage.setItem('token', data)
     })
   }
 
@@ -50,7 +55,7 @@ class LogIn extends Component {
           />
         </div>
       <button><Link className="signup-button" to="/create"> Sign Up </Link></button>
-      <button onClick={this.postLogin.bind(this)}><Link className="login-button" to="/home"> Log In </Link></button>
+      <button onClick={this.postLogin.bind(this)}>Log In</button>
       </div>
     );
   }
