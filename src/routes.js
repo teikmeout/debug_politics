@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Route, IndexRoute, Link } from 'react-router';
-<<<<<<< HEAD
 import App from './components/App.jsx';
 import Home from './components/Home/Home.jsx';
 import LogIn from './components/LogIn/LogIn.jsx';
