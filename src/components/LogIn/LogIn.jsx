@@ -51,13 +51,11 @@ class LogIn extends Component {
             <input
               type="text"
               placeholder="username"
-              value={this.state.username}
               onChange={this.trackLoginInput.bind(this)}
             />
             <input
               type="text"
               placeholder="password"
-              value={this.state.password}
               onChange={this.trackLoginInput.bind(this)}
             />
           </div>
