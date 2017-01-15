@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import styles from './Results.css';
+import Nav from '../Nav/Nav.jsx'
 
 class Results extends Component {
   constructor(props) {
@@ -44,7 +45,9 @@ class Results extends Component {
   render() {
 
     return (
-      <section className='results'>
+      <section>
+      <Nav />
+      <div className='results'>
         <div className='rep-cont'>
           <img src={this.state.photoUrl} className='rep-img'/>
           <aside className='rep-info'>
@@ -135,7 +138,8 @@ class Results extends Component {
 
         </div>
 
-      </section>
+      </div>
+    </section>
     )
   }
 }

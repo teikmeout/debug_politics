@@ -52,6 +52,7 @@ class CreateUser extends Component {
   render() {
     return (
       <div className="create-user-cont">
+        <Nav />
         <div className="create-user">
           <h2>Create Account:</h2>
           <div className="input-field">
