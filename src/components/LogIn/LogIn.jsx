@@ -41,21 +41,30 @@ class LogIn extends Component {
 
   render() {
     return (
-      <div className={styles['']}>
-        <div className="log-in">
-          <input
-            type="text"
-            placeholder="username"
-            onChange={this.trackLoginInput.bind(this)}
-          />
-          <input
-            type="password"
-            placeholder="password"
-            onChange={this.trackLoginInput.bind(this)}
-          />
+      <div className="login_container">
+        <h1>RepDotBody</h1>
+        <br/>
+        <br/>
+        <br/>
+        <div className="login-flex-parent">
+          <div className="log-in">
+            <input
+              type="text"
+              placeholder="username"
+              value={this.state.username}
+              onChange={this.trackLoginInput.bind(this)}
+            />
+            <input
+              type="text"
+              placeholder="password"
+              value={this.state.password}
+              onChange={this.trackLoginInput.bind(this)}
+            />
+          </div>
+
+          <button><Link className="signup-button" to="/create"> Sign Up </Link></button>
+          <button><Link className="login-button" to="/home"> Log In </Link></button>
         </div>
-      <button><Link className="signup-button" to="/create"> Sign Up </Link></button>
-      <button onClick={this.postLogin.bind(this)}>Log In</button>
       </div>
     );
   }
