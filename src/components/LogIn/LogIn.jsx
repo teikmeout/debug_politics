@@ -54,7 +54,7 @@ class LogIn extends Component {
               onChange={this.trackLoginInput.bind(this)}
             />
             <input
-              type="text"
+              type="password"
               placeholder="password"
               onChange={this.trackLoginInput.bind(this)}
             />

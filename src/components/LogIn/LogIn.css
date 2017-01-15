@@ -40,6 +40,7 @@
   height: 3em;
   text-align: center;
   font-size: 15px;
+  border: none;
 }
 
 .login-flex-parent button {
@@ -48,6 +49,7 @@
   width: 70px;
   font-size: 14px;
   border-radius: 10px;
+  border: none;
   /*background-color: lightblue;*/
 }
 
