@@ -22,7 +22,7 @@ class UpdateUser extends Component {
   render() {
     return(
       <div className="update">
-        <section>
+        <section className="update-container">
           <h3>Update your information</h3>
           <input
             type="text"
