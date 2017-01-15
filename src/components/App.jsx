@@ -39,14 +39,12 @@ class App extends Component {
   }
 
   getOfficialsByAddress() {
-    console.log('getting officials', this.state)
     const queryString =  '/official/' + this.state.address
     return fetch(queryString)
     .then(response => response.json())
     .then( (data) => {
-      console.log('inside function', data)
       this.setState({
-        officials: data
+        officials: data.officials
       })
     })
     .catch( (error) => {
