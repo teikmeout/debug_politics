@@ -43,54 +43,57 @@ class Results extends Component {
   }
 
   render() {
-
     return (
       <section>
       <Nav />
       <div className='results'>
         <div className='rep-cont'>
+          <h3>{this.state.name} ({this.state.party})</h3>
           <img src={this.state.photoUrl} className='rep-img'/>
           <aside className='rep-info'>
-            <h3>{this.state.name} ({this.state.party})</h3>
             <a href={"http://facebook.com/" + this.state.channels[0].id}>Facebook: {this.state.channels[0].id}</a><br/>
             <a href={"http://twitter.com/" + this.state.channels[1].id}>@{this.state.channels[1].id}</a>
-            <p>{this.state.address[0].line1}</p><p>{this.state.address[0].city}</p><p>{this.state.address[0].state}, {this.state.address[0].zup}</p>
+            <p>{this.state.address[0].line1}</p><p>{this.state.address[0].city}, {this.state.address[0].state}</p>
+            <p>{this.state.address[0].zup}</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed ultrices ligula.</p>
 
           </aside>
 
         </div>
         <div className='rep-cont'>
+          <h3>{this.state.name} ({this.state.party})</h3>
           <img src={this.state.photoUrl} className='rep-img'/>
           <aside className='rep-info'>
-            <h3>{this.state.name} ({this.state.party})</h3>
             <a href={"http://facebook.com/" + this.state.channels[0].id}>Facebook: {this.state.channels[0].id}</a><br/>
             <a href={"http://twitter.com/" + this.state.channels[1].id}>@{this.state.channels[1].id}</a>
-            <p>{this.state.address[0].line1}</p><p>{this.state.address[0].city}</p><p>{this.state.address[0].state}, {this.state.address[0].zup}</p>
+            <p>{this.state.address[0].line1}</p><p>{this.state.address[0].city}, {this.state.address[0].state}</p>
+            <p>{this.state.address[0].zup}</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed ultrices ligula.</p>
 
           </aside>
 
         </div>
         <div className='rep-cont'>
+          <h3>{this.state.name} ({this.state.party})</h3>
           <img src={this.state.photoUrl} className='rep-img'/>
           <aside className='rep-info'>
-            <h3>{this.state.name} ({this.state.party})</h3>
             <a href={"http://facebook.com/" + this.state.channels[0].id}>Facebook: {this.state.channels[0].id}</a><br/>
             <a href={"http://twitter.com/" + this.state.channels[1].id}>@{this.state.channels[1].id}</a>
-            <p>{this.state.address[0].line1}</p><p>{this.state.address[0].city}</p><p>{this.state.address[0].state}, {this.state.address[0].zup}</p>
+            <p>{this.state.address[0].line1}</p><p>{this.state.address[0].city}, {this.state.address[0].state}</p>
+            <p>{this.state.address[0].zup}</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed ultrices ligula.</p>
 
           </aside>
 
         </div>
         <div className='rep-cont'>
+          <h3>{this.state.name} ({this.state.party})</h3>
           <img src={this.state.photoUrl} className='rep-img'/>
           <aside className='rep-info'>
-            <h3>{this.state.name} ({this.state.party})</h3>
             <a href={"http://facebook.com/" + this.state.channels[0].id}>Facebook: {this.state.channels[0].id}</a><br/>
             <a href={"http://twitter.com/" + this.state.channels[1].id}>@{this.state.channels[1].id}</a>
-            <p>{this.state.address[0].line1}</p><p>{this.state.address[0].city}</p><p>{this.state.address[0].state}, {this.state.address[0].zup}</p>
+            <p>{this.state.address[0].line1}</p><p>{this.state.address[0].city}, {this.state.address[0].state}</p>
+            <p>{this.state.address[0].zup}</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed ultrices ligula.</p>
 
           </aside>
@@ -98,26 +101,13 @@ class Results extends Component {
         </div>
 
         <div className='rep-cont'>
+          <h3>{this.state.name} ({this.state.party})</h3>
           <img src={this.state.photoUrl} className='rep-img'/>
           <aside className='rep-info'>
-            <h3>{this.state.name} ({this.state.party})</h3>
             <a href={"http://facebook.com/" + this.state.channels[0].id}>Facebook: {this.state.channels[0].id}</a><br/>
             <a href={"http://twitter.com/" + this.state.channels[1].id}>@{this.state.channels[1].id}</a>
-            <p>{this.state.address[0].line1}</p><p>{this.state.address[0].city}</p><p>{this.state.address[0].state}, {this.state.address[0].zup}</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed ultrices ligula.</p>
-
-          </aside>
-
-        </div>
-
-
-        <div className='rep-cont'>
-          <img src={this.state.photoUrl} className='rep-img'/>
-          <aside className='rep-info'>
-            <h3>{this.state.name} ({this.state.party})</h3>
-            <a href={"http://facebook.com/" + this.state.channels[0].id}>Facebook: {this.state.channels[0].id}</a><br/>
-            <a href={"http://twitter.com/" + this.state.channels[1].id}>@{this.state.channels[1].id}</a>
-            <p>{this.state.address[0].line1}</p><p>{this.state.address[0].city}</p><p>{this.state.address[0].state}, {this.state.address[0].zup}</p>
+            <p>{this.state.address[0].line1}</p><p>{this.state.address[0].city}, {this.state.address[0].state}</p>
+            <p>{this.state.address[0].zup}</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed ultrices ligula.</p>
 
           </aside>
@@ -126,12 +116,28 @@ class Results extends Component {
 
 
         <div className='rep-cont'>
+          <h3>{this.state.name} ({this.state.party})</h3>
           <img src={this.state.photoUrl} className='rep-img'/>
           <aside className='rep-info'>
-            <h3>{this.state.name} ({this.state.party})</h3>
             <a href={"http://facebook.com/" + this.state.channels[0].id}>Facebook: {this.state.channels[0].id}</a><br/>
             <a href={"http://twitter.com/" + this.state.channels[1].id}>@{this.state.channels[1].id}</a>
-            <p>{this.state.address[0].line1}</p><p>{this.state.address[0].city}</p><p>{this.state.address[0].state}, {this.state.address[0].zup}</p>
+            <p>{this.state.address[0].line1}</p><p>{this.state.address[0].city}, {this.state.address[0].state}</p>
+            <p>{this.state.address[0].zup}</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed ultrices ligula.</p>
+
+          </aside>
+
+        </div>
+
+
+        <div className='rep-cont'>
+          <h3>{this.state.name} ({this.state.party})</h3>
+          <img src={this.state.photoUrl} className='rep-img'/>
+          <aside className='rep-info'>
+            <a href={"http://facebook.com/" + this.state.channels[0].id}>Facebook: {this.state.channels[0].id}</a><br/>
+            <a href={"http://twitter.com/" + this.state.channels[1].id}>@{this.state.channels[1].id}</a>
+            <p>{this.state.address[0].line1}</p><p>{this.state.address[0].city}, {this.state.address[0].state}</p>
+            <p>{this.state.address[0].zup}</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed ultrices ligula.</p>
 
           </aside>
