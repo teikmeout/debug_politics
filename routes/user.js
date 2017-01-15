@@ -10,6 +10,6 @@ userRouter.route('/signup')
   .post(createUser, (req, res, next) => res.json(res.signupResult));
 
 userRouter.route('/login')
-  .post(authenticate, (req, res, next) => res.json(res.token));
+  .post(authenticate, (req, res, next) => res.json(res.match));
 
 module.exports = userRouter;

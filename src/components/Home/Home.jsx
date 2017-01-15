@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import NewsArticles from './NewsArticles/NewsArticles.jsx';
+import Official from './Official.jsx'
 import styles from './Home.css';
 import Nav from '../Nav/Nav.jsx'
 
@@ -42,6 +43,7 @@ class Home extends Component {
     }
   }
 
+<<<<<<< HEAD
   // officialsList() {
   //   return this.props.officials.map((official, i) => {
   //     <Home
@@ -102,6 +104,33 @@ class Home extends Component {
 
           </aside>
 
+=======
+  componentDidMount() {
+    this.props.getOfficialsByAddress()
+    console.log(this.props.officials[0])
+  }
+
+  renderOfficialsList() {
+    return this.props.officials.map((official, i) => {
+      return(
+        <Official
+          key={i}
+          name={official.name}
+          party={official.party}
+          img={official.photoUrl}
+        />
+      )
+    });
+  }
+
+  render() {
+    return (
+      <div className={styles['']}>
+        <div className="official-list" onClick={() => this.props.clickMethod(props.official)}>
+        <h1 >This is where the official list will live</h1>
+        {this.renderOfficialsList()}
+        <NewsArticles />
+>>>>>>> 09901d00713c5b78a0b0ce7431b5bedb9e637920
         </div>
         <div className='rep-cont'>
           <h3>{this.state.name} ({this.state.party})</h3>
