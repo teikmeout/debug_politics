@@ -1,6 +1,7 @@
 import React,  { Component }from 'react';
 import { Link, browserHistory } from 'react-router';
 import styles from './CreateUser.css';
+import Nav from '../Nav/Nav.jsx'
 
 class CreateUser extends Component {
   constructor(props) {
@@ -51,6 +52,7 @@ class CreateUser extends Component {
   render() {
     return (
       <div className="create-user">
+        <Nav />
         <h2>Create Account:</h2>
         <div className="input-field">
           <p>Username:</p>
