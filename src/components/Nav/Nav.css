@@ -1,0 +1,11 @@
+.nav-header {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 2em;
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  text-align: center;
+  height: 40px;
+  width: 100%;
+  background-color: lightblue;
+}
