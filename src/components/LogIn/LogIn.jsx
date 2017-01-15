@@ -26,7 +26,7 @@ class LogIn extends Component {
               onChange={this.props.trackLoginInput}
             />
             <input
-              type="text"
+              type="password"
               placeholder="password"
               onChange={this.props.trackLoginInput}
             />
