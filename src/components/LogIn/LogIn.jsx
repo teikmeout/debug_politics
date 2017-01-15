@@ -1,37 +1,41 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link, browserHistory } from 'react-router';
 import styles from './LogIn.css';
 
 class LogIn extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      username: '',
-      password: '',
-    }
   }
 
   postLogin(e) {
-    return fetch('localhost:3000/user/login', {
+    console.log('logging in')
+    return fetch('/user/login', {
       method: 'POST',
       headers: {
         'content-type': 'application/JSON'
       },
       body: JSON.stringify({
-        loginUsername: this.state.username,
+        loginUsername: this.state.loginUsername,
         loginPassword: this.state.loginPassword
       })
     })
+    .then(result => result.json())
     .then( (data) => {
-      localStorage.setItem('token', data)
+      if (!data.failed) {
+        browserHistory.push('/home')
+        localStorage.setItem('token', data)
+      } else {
+        console.log('nope')
+      }
+      console.log(data)
     })
   }
 
   trackLoginInput(e) {
-    console.log(e)
+    let inputArray = e.target.parentElement.childNodes
     this.setState({
-      username: e.target.value,
-      password: e.target.value,
+      loginUsername: inputArray[0].value,
+      loginPassword: inputArray[1].value,
     });
   }
 

@@ -9,39 +9,41 @@ class CreateUser extends Component {
     this.state = {
       signupUsername: '',
       signupPassword: '',
-      confirmPassword: '',
+      signupConfirm: '',
       address: '',
     }
   }
 
   createUser(e) {
-    e.preventDefault();
-    const bodyObj = {
-      signupUsername: this.state.signupUsername,
-      signupPassword: this.state.signupPassword,
-      confirmPassword: this.state.confirmPassword,
-      address: this.state.address
-    }
+    console.log('hi!')
     fetch('/user/signup', {
-      headers: new Headers({
-        'Content-Type': 'application/json'
-      }),
       method: 'POST',
-      body: JSON.stringify(bodyObj)
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        signupUsername: this.state.signupUsername,
+        signupPassword: this.state.signupPassword,
+        signupConfirm: this.state.signupConfirm,
+        address: this.state.address
+      })
     })
-    .then(r => r.json())
     .then((data) => {
+      console.log(data)
       localStorage.setItem('token', data);
     })
     .catch(err => console.log(err));
   }
 
   updateInputFields(e) {
+    let inputArray = e.target.parentElement.childNodes;
     this.setState({
-      signupUsername: e.target.value,
-      signupPassword: e.target.value,
-      confirmPassword: e.target.value,
-      address: e.target.value,
+      signupUsername: inputArray[1].value,
+      signupPassword: inputArray[3].value,
+      signupConfirm: inputArray[5].value,
+      address: inputArray[7].value,
+    }, () => {
+      console.log(this.state)
     });
   }
 
@@ -56,31 +58,27 @@ class CreateUser extends Component {
             type="text"
             name="signupUsername"
             placeholder="signupUsername"
-            value={this.state.signupUsername}
             onChange={this.updateInputFields.bind(this)} />
           <p>Password:</p>
           <input
-            type="text"
+            type="password"
             name="signupPassword"
             placeholder="signupPassword"
-            value={this.state.signupPassword}
             onChange={this.updateInputFields.bind(this)} />
           <p>Confirm Password:</p>
           <input
-            type="text"
-            name="confirmPassword"
-            placeholder="confirmPassword"
-            value={this.state.confirmPassword}
+            type="password"
+            name="signupConfirm"
+            placeholder="signupConfirm"
             onChange={this.updateInputFields.bind(this)} />
           <address>Address:</address>
           <input
             type="text"
             name="address"
             placeholder="address"
-            value={this.state.address}
             onChange={this.updateInputFields.bind(this)} />
         </div>
-      <Link className='create' to="/home"><button> Submit </button></Link>
+      <Link className='create' to="/home"><button onClick={this.createUser.bind(this)}> Submit </button></Link>
       </div>
     );
   }
