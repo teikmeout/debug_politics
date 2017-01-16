@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Official.css';
 
 class Official extends Component {
   constructor(props) {
@@ -8,8 +9,8 @@ class Official extends Component {
   render() {
     return(
       <div>
-        <h1>official goes here</h1>
-        <h3>{this.props.name}</h3>
+        <img src={this.props.img} className="rep-img" height="50px" width="50px"/>
+        <h3 className='trial' >{this.props.name}</h3>
       </div>
     )
   }

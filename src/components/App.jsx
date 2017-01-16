@@ -40,6 +40,7 @@ class App extends Component {
   }
 
   getOfficialsByAddress() {
+    console.log('getOfficialsByAddress', this.state.address);
     const queryString =  '/official/' + this.state.address
     return fetch(queryString)
     .then(response => response.json())
